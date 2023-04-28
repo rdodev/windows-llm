@@ -13,3 +13,5 @@ COPY ./requirements.txt /app/
 RUN pip3 install -r requirements.txt
 
 
+# Run the notebook
+CMD ["jupyter", "notebook", "--allow-root", "--port=8888", "--no-browser", "--ip=0.0.0.0"]
